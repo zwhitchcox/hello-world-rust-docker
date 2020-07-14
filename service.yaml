@@ -1,0 +1,12 @@
+kind: Service
+metadata:
+  name: helloworld-rust
+  namespace: default
+spec:
+  template:
+    spec:
+    containers:
+      - image: docker.io/zwhitchcox/helloworld-rust
+        env:
+          - name: TARGET
+        value: "Rust Sample v1"
