@@ -3,6 +3,9 @@ name = "hellorust"
 version = "0.0.0"
 publish = false
 edition = "2018"
+[[bin]]
+name = "hellorust"
+path = "src/main.rs"
 
 [dependencies]
 warp = "0.2.3"
